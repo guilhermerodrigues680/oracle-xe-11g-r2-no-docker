@@ -1,0 +1,18 @@
+version: "3.3"
+services:
+  banco:
+    container_name: banco-oracle-xe-11g-r2
+    image: wnameless/oracle-xe-11g-r2:latest
+    ports:
+      - "49161:1521" # portaExterna:portaInterna , HOST:CONTAINER
+    expose:
+      - "1521"
+    environment:
+      - ORACLE_ALLOW_REMOTE=true
+    #   - ORACLE_DISABLE_ASYNCH_IO=true
+    #   - ORACLE_ENABLE_XDB=true
+    volumes: 
+      - oracle:/u01/app/oracle
+
+volumes:
+  oracle:

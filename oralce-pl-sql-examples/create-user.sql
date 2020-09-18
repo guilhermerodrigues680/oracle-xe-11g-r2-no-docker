@@ -1,0 +1,3 @@
+CREATE USER guilherme IDENTIFIED BY MyPassword;
+--GRANT CREATE SESSION TO guilherme;
+GRANT ALL PRIVILEGES TO guilherme;

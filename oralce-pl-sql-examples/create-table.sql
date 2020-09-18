@@ -1,0 +1,6 @@
+CREATE TABLE books (
+    id NUMBER(5) PRIMARY KEY,
+    book_name VARCHAR2(255) NOT NULL,
+    author_name VARCHAR2(255) NOT NULL,
+    isbn VARCHAR2(255) NOT NULL
+);
